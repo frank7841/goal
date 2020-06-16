@@ -9,6 +9,9 @@ import { StrikeTHroughDirective } from './strike-through.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { FormsModule } from '@angular/forms';
 import { GoalFormComponent } from './goal-form/goal-form.component';
+import {HttpClientModule} from '@angular/common/http';
+import {NgProgressModule} from '@ngx-progressbar/core';
+import {NgProgressHttpClientModule} from '@ngx-progressbar/http-client';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,11 @@ import { GoalFormComponent } from './goal-form/goal-form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
