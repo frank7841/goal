@@ -22,7 +22,7 @@ export class GoalComponent implements OnInit {
 }
 goalDelete(index){
   // if(isComplete){
-   let toDelete = confirm(`Are you syre you want to delete ${this.goals[index].name}?` );
+   let toDelete = confirm(`Are you sure you want to delete ${this.goals[index].name}?` );
    if (toDelete) {
      this.goals.splice(index,1);
      this.alertService.alertMe("The Goal has been deleted")     
