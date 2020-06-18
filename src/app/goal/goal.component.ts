@@ -12,6 +12,9 @@ import {Router} from '@angular/router';
   styleUrls: ['./goal.component.css']
 })
 export class GoalComponent implements OnInit {
+  goals: any;
+  alertService: any;
+  quote: Quote;
 
   goToUrl(id){[
     this.router.navigate(['/goals',id])
