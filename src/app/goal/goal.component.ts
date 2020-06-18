@@ -65,7 +65,7 @@ goalDelete(index){
       //Succesful API request
       this.quote = new Quote(data.author, data.quote)
     },err=>{
-      this.quote = new Quote("Winston Churchill","Never never give up!")
+      this.quote = new Quote("Captain America","Avengers Assemble")
       console.log("An error occurred")
   })
 
